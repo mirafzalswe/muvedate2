@@ -5,7 +5,7 @@ import django.db.models.deletion
 from django.db import migrations, models
 from pages.models import Page, Tutorial, Video
 
-def exchange(apps, schema_editor):
+def sort_date(apps, schema_editor):
     tutorials = []
     videos = []
     page_updates = []
@@ -30,5 +30,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RunPython(exchange)
+        migrations.RunPython(sort_date)
     ]
