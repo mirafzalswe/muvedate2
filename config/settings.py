@@ -6,7 +6,7 @@ SECRET_KEY = 'django-insecure-wh4y0tqe@w1+572uy^oi*&m5vedotm8@oby%gu!wq(oi0fas5l
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*', '127.0.0.1', '.vercel.app']
 
 
 INSTALLED_APPS = [
@@ -48,7 +48,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'config.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.app'
 
 
 # Database
@@ -102,6 +102,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 MDEDITOR_CONFIGS = {
     'default': {
         'width': '90%',
