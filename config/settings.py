@@ -16,7 +16,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pages'
+    'pages',
+    'mdeditor',
 ]
 
 MIDDLEWARE = [
@@ -101,3 +102,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+MDEDITOR_CONFIGS = {
+    'default': {
+        'width': '90%',
+        'height': 500,
+        'toolbar': ["bold", "italic", "heading", "quote", "unorderedlist", "orderedlist", "link", "image", "code", "preview", "fullscreen", "help"],
+    },
+}
